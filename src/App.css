@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.danger {
+  color: red;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +40,44 @@
     transform: rotate(360deg);
   }
 }
+
+/* Reset list styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 !important;
+  display: flex;
+  background-color: #333; /* Dark background for the navbar */
+  overflow: hidden;
+
+}
+
+/* Style each list item */
+li {
+  flex: 1;
+  text-align: center;
+}
+
+/* Style the links */
+li a {
+  display: block;
+  color: white; /* White text color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+li a:hover {
+  background-color: #575757; /* Slightly lighter background on hover */
+  color: #f1f1f1; /* Light gray text color on hover */
+}
+
+/* Active link style */
+li a.active {
+  background-color: #4CAF50; /* Green background for the active link */
+  color: white;
+}
+
